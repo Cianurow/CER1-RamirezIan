@@ -34,8 +34,7 @@
 
 
 .slide img {
-    padding-top: 50px;
-    height: calc(100vh - 120px);
+    height: calc(100vh - 155px);
 }
 
 .cajas{
@@ -83,4 +82,8 @@
 .portada {
     margin-top: 20vh;
     margin-bottom: 10vh;
+}
+
+.pagina {
+    margin: 20px;
 }
