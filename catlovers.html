@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Todo sobre Gatos</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header class="row sticky-sm-top bg-top">
+            <div id="logo" class="col-md-3"></div>
+            <div class="col-md-6">
+                <nav class="navbar navbar-expand-md bg-top">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <ul class="navbar-nav mb-2 mb-lg-0 mx-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link active me-4" aria-current="page" href="index.html">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link me-4" href="accesorios.html">Accesorios</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link me-4" href="catlovers.html">Cat lovers</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link me-4" href="contactos.html">Contactanos</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+            </div>
+        </header>
+
+        <header class="row sticky-sm-top bg-grey">
+            <h1 class="titulo">Articulos para los Cat Lovers</h1>
+        </header>
+
+
+        <div id="catlovers" class="row bg-light">
+            <div class="col">
+                <div class="cajas">
+                    <img src="img/catlovers/Latas-creativas.webp" alt="converse " width="275px" height="150px">
+                    <p>
+                    <h2>Vaso gatito</h2> <br>
+                    <h2> $7.990</h2>
+                    </p>
+                    <button class="boton" type="button" class="btn btn-dark" onclick="Toasty( )">Comprar</button>                 
+                    
+                </div>
+            </div>
+            <div class="col">
+                <div class="cajas">
+                    <img src="img/catlovers/llaverogato2_grande.webp" alt="converse " width="275px" height="150px">
+                    <p>
+                    <h2>Colgador gatito</h2> <br>
+                    <h2> $3.990</h2>
+                    </p>
+                    <button class="boton" type="button" class="btn btn-dark" onclick="Toasty( )">Comprar</button>
+                </div>
+            </div>
+            <div class="col">
+                <div class="cajas">
+                    <img src="img/catlovers/portaminagatos_grande.webp" alt="converse " width="275px" height="150px">
+                    <p>
+                    <h2>Portaminas</h2> <br>
+                    <h2> $990</h2>
+                    </p>
+                    <button class="boton" type="button" class="btn btn-dark" onclick="Toasty( )">Comprar</button>
+                </div>
+            </div>
+            <div class="col">
+                <div class="cajas">
+                    <img src="img/catlovers/tazon_fruta.webp" alt="converse" width="275px" height="150px">
+                    <p>
+                    <h2>Tazón fruta (vidrio)</h2> <br>
+                    <h2> $6.990</h2>
+                    </p>
+                    <button class="boton" type="button" class="btn btn-dark" onclick="Toasty( )">Comprar</button>
+                
+                </div>
+            </div>
+
+            <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                <div id="EpicToast" class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="d-flex">
+                      <div class="toast-body">
+                            Articulo agregado para la compra
+                      </div>
+                      <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                  </div>
+            </div>
+           
+
+        </div>
+
+
+
+    </div>
+
+
+    <script>
+        var option =
+        {
+            Animation : true,
+            delay: 2000
+        };
+
+        function Toasty( )
+        {
+            var toastHTMLElement = document.getElementById("EpicToast")
+
+            var toastElement = new bootstrap.Toast(toastHTMLElement, option)
+
+            toastElement.show( )
+        }
+
+    </script>
+
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+</body>
+
+</html>
